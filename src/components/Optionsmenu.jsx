@@ -20,7 +20,7 @@ const OptionsMenu = () => {
   const [helpOpen, setHelpOpen] = useState(false);
   const [panelOpen, setPanelOpen] = useState(false);
 
-  const logout = () => (window.location.href = "http://localhost:3000");
+  const logout = () => (window.location.href = `${import.meta.env.VITE_FRONTEND_URL}`);
 
   return (
     <div className="fixed top-4 right-4 z-50 flex items-center gap-4 font-sans">
